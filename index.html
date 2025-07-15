@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href=" styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- ------------------------Navbar----------------------------------------- -->
+    <nav class="navbar">
+        <div class="logo"><a href="#main">Prashant</a></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+       </div>
+
+    </nav>
+
+    <!-- ------------------------Profile-------------------------------------- -->
+    <div id="main" class="main">
+        <div class="name">
+            <p>Hello, I am Prashant <br><span id="element"></span></p>
+            
+        </div>
+        <div class="photo">
+            <img src="me.png" alt="">
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+      strings: ['Front End Developer', 'Back End Developer'],
+      typeSpeed: 100,
+      backSpeed :100,
+      backDelay :1000,
+      startDelay :100,
+      loop : true,
+      });
+    </script>
+     <!-- ----------------------------About------------------------------------- -->
+    <div id="about" class="about" data-aos="zoom-in">
+        <h3>A Bit About Me</h3>
+        <p>Hi, I am a passionate and detail-oriented web developer with hands-on experience in Python, Django, HTML, CSS, JavaScript, and SQLite. I specialize in building dynamic and responsive web applications with clean, scalable code and intuitive user interfaces.
+
+          My strength lies in backend development using Django, combined with a solid understanding of frontend technologies to create seamless full-stack solutions. I'm also familiar with working with APIs, managing databases, and making web apps mobile-friendly and performant.
+
+          I'm currently working on a location-based web app that suggests nearby places using the OpenTripMap API, showcasing my interest in combining real-world data with practical functionality.
+
+          I believe in continuous learning and constantly strive to improve my skills while building meaningful digital experiences.
+        </p>
+    </div>
+    <!-- ---------------------------Skills------------------------------- -->
+    <div id="skills" class="skill-container">
+     <h3>Skills</h3>
+        <div class="container" data-aos="fade-in">
+            <div class="items">
+                <img src='bt.jpg' alt="">
+            </div>
+            <div class="items">
+                <img src="js.png" alt="">
+            </div>
+            <div class="items">
+                <img src="django.jpg" alt="">
+            </div>
+            <div class="items">
+                <img src="py3.png" alt="">
+            </div>
+            <div class="items">
+                <img src="html.png" alt="">
+            </div>
+            <div class="items">
+                <img src="SQL.png" alt="">
+            </div>
+        </div>
+  </div>
+  <!-- ------------------PROJECTS--------------- -->
+  <div id="projects" class="project-box">
+       <div class="project-container">
+           <h3>My Projects</h3>
+           <div class="container2" data-aos="zoom-in">
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="ay.png" alt="Image 1">
+                        <div class="card-info">
+                            <h2>Around YOU</h2>
+                            <p>Gives location-based nearby places suggestions</p>
+                        </div>
+                    </div>
+                    <button ><a href="https://aroundyou.pythonanywhere.com/">Explore</a></button>
+                </div>
+                <div class="card">
+                   <div class="image-wrapper">
+                        <img src="cc.png" alt="Image 1">
+                        <div class="card-info">
+                            <h2>CoinCompass</h2>
+                            <p>Your Personal Expense Manager</p>
+                        </div>
+                    </div>
+                   <button>Explore</button>
+                </div>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="td.png" alt="Image 1">
+                        <div class="card-info">
+                            <h2>ToDO !</h2>
+                            <p>Keeps track of everything you have to do or done</p>
+                        </div>
+                    </div>
+                    <button>Explore</button>
+                </div>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="tt2.png" alt="Image 1">
+                        <div class="card-info">
+                            <h2>Tic Tac Toe</h2>
+                            <p>A timeless classic and fun game</p>
+                        </div>
+                    </div>
+                    <button><a href="https://pktgithub.github.io/Stone-Paper-Scissors/">Explore</a></button>
+                </div>
+           </div>
+       </div>
+    </div> 
+
+ <!-- ------------------------- Contact Us ------------------------------    -->
+    <div class="contact-main">
+        <div id="contact" class="contact-box">
+            <h3>Let's Work Together</h3>
+            <form class="contact" data-aos="zoom-in">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <div class="socials" data-aos="zoom-in">
+            <h3>Follow me on socials</h3>
+            <div class="social-profile" >
+                <div class="social-logo">
+                    <img src="inkedin.webp" alt="">
+                </div>
+                <a href="https://www.linkedin.com/in/prashant-tiwary-7521ab275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            </div>
+            <div class="social-profile">
+                <div class="social-logo">
+                    <img src="git2.png"  alt="">
+                </div>
+                <a href="https://github.com/Pktgithub">Github</a>
+            </div>
+            <div class="social-profile">
+                <div class="social-logo">
+                    <img src="ig3.png" alt="">
+                </div>
+                <a href="https://www.instagram.com/_.prasha05nt._?igsh=cGMxcGE4eTk1dzN3">Instagram</a>
+            </div>
+            
+        </div>
+    </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+ </script>
+
+</body>
+</html>
